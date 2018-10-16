@@ -12,7 +12,6 @@
     android:background="@drawable/table3"
     tools:context="bw.co.bitri.mycardapplication.MainActivity">
 
-
     <!-- Deck Image, remaining cards to be selected from-->
     <ImageView
         android:layout_width="150dp"
