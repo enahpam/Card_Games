@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stalked_deck"
+    android:weightSum="1">
+
+    <!-- outlines the rules of the game for new users -->
+    <Button
+        android:id="@+id/help"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Rules"
+        android:onClick="menuOptions"
+        android:layout_weight="0.12" />
+
+    <!-- player against computer -->
+    <Button
+        android:id="@+id/single_player"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Single_Player"
+        android:onClick="menuOptions"
+        android:layout_weight="0.15" />
+
+    <!-- Trade the winnings in Money Chips or Real money payed into accounts -->
+
+    <Button
+        android:id="@+id/multi_player_practice"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Practice_Game"
+        android:onClick="menuOptions"
+        android:layout_weight="0.15" />
+
+    <!-- Trade the winnings in Mobile Airtime or Real money payed into accounts -->
+    <Button
+        android:id="@+id/multi_player_real"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:text="Money_Game"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:onClick="menuOptions"
+        android:layout_weight="0.15" />
+
+
+    <!-- Allows users some time to adjust settings, like sound, game speed, etc -->
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Settings"
+        android:onClick="menuOptions"
+        android:layout_weight="0.15" />
+
+    <!-- Testing the card selection game using the grid game-->
+    <Button
+        android:id="@+id/cardGrid"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Card_Grid"
+        android:onClick="menuOptions"
+        android:layout_weight="0.15" />
+</LinearLayout>

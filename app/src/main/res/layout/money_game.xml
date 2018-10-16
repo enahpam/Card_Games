@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/table3"
+    tools:context="bw.co.bitri.mycardapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/compHand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/iv_cp1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+
+        <ImageView
+            android:id="@+id/iv_cp2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+
+        <ImageView
+            android:id="@+id/iv_cp3"
+            android:layout_width="82dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+
+        <ImageView
+            android:id="@+id/iv_cp4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+
+        <ImageView
+            android:id="@+id/iv_cp5"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+
+        <ImageView
+            android:id="@+id/iv_cp6"
+            android:layout_width="98dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/deck_back" />
+    </LinearLayout>
+
+    <!-- Deck Image, remaining cards to be selected from-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:id="@+id/iv_deck"
+        android:src="@drawable/ace_spade"
+        android:layout_above="@+id/playerTVC"
+        android:layout_alignStart="@+id/iv_deck0" />
+
+    <!-- Base top card, The card that determines suit and number to be played.-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:id="@+id/iv_deck0"
+        android:src="@drawable/deck_back"
+        android:layout_above="@+id/iv_deck"
+        android:layout_toEndOf="@+id/playerTVC"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Player's cards on hand// Should be scrollable-->
+
+    <HorizontalScrollView
+        android:id="@+id/HZ_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/iv_deck1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ace_clubs" />
+
+            <ImageView
+                android:id="@+id/iv_deck2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/jack_diamond" />
+
+            <ImageView
+                android:id="@+id/iv_deck3"
+                android:layout_width="82dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/seven_clubs" />
+
+            <ImageView
+                android:id="@+id/iv_deck4"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/queen_spades" />
+
+            <ImageView
+                android:id="@+id/iv_deck5"
+                android:layout_width="96dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/two_spades" />
+
+            <ImageView
+                android:id="@+id/iv_deck6"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/five_hearts" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/deckRemainder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_deck0"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/iv_deck0"
+        android:text="40"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/playerTVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="11pt"
+        android:layout_above="@+id/HZ_scrollview"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
