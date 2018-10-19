@@ -13,7 +13,7 @@ import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView iv_deck,baseCard,card0,card1,card2,card3,card4,card5,card6;            // variables to hold Image Views for the cards
+    ImageView cardStalk,baseCard,card0,card1,card2,card3,card4,card5,card6;            // variables to hold Image Views for the cards
 
    // ArrayList<Integer> cards;                                                       // The deck of cards
     ArrayList<Card> Kards;
@@ -186,16 +186,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void viewsInit() {
         //Kards  = new ArrayList<Card>();
-        baseCard = (ImageView) findViewById(R.id.iv_deck);               //base card
+        baseCard = (ImageView) findViewById(R.id.base_card);               //base card
 
-        card0 = (ImageView) findViewById(R.id.iv_deck0);                //Deck of card
+        card0 = (ImageView) findViewById(R.id.card_stalk);                //Deck of card
 
-        card1 = (ImageView) findViewById(R.id.iv_deck1);                // player card 1
-        card2 = (ImageView) findViewById(R.id.iv_deck2);                // player card 2
-        card3 = (ImageView) findViewById(R.id.iv_deck3);                // player card 3
-        card4 = (ImageView) findViewById(R.id.iv_deck4);                // player card 4
-        card5 = (ImageView) findViewById(R.id.iv_deck5);                // player card 5
-        card6 = (ImageView) findViewById(R.id.iv_deck6);                // player card 6
+        card1 = (ImageView) findViewById(R.id.card_1);                // player card 1
+        card2 = (ImageView) findViewById(R.id.card_2);                // player card 2
+        card3 = (ImageView) findViewById(R.id.card_3);                // player card 3
+        card4 = (ImageView) findViewById(R.id.card_4);                // player card 4
+        card5 = (ImageView) findViewById(R.id.card_5);                // player card 5
+        card6 = (ImageView) findViewById(R.id.card_6);                // player card 6
 
         //Make the card Images visible
         card1.setVisibility(View.VISIBLE);

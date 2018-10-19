@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class CardGrid extends Activity {
 
-    private ImageView firstCard, secondCard, thirdCard, fouthCard;
+    private ImageView firstCard, secondCard, thirdCard, fourthCard;
     private Card card1, card2,card3, card4;
     private int points = 0,noCards,card1_value, card2_value;
    // private ArrayList<Card> deckOfCards;
@@ -35,7 +35,7 @@ public class CardGrid extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.card_grid);
 
-        viewsInit();                                        //initialze the cards face down setup
+        viewsInit();                                        //initialize the cards face down setup
         updateDeck();                                       // create a new deck of cards
         Collections.shuffle(Kards);                         //Shuffles the cards
 
@@ -83,11 +83,11 @@ public class CardGrid extends Activity {
                         }
                     });
 
-                    fouthCard.setOnClickListener(new View.OnClickListener() {
+                    fourthCard.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             Toast.makeText(CardGrid.this, count + "Selected", Toast.LENGTH_SHORT).show();
-                            fouthCard.setImageResource(Kards.get(3).getCardImage());
+                            fourthCard.setImageResource(Kards.get(3).getCardImage());
                             card4 = Kards.get(4);
                             card1_face = card4.getFaceValue();
                             card1_suit = card4.getSuit();
@@ -161,10 +161,10 @@ public class CardGrid extends Activity {
                         }
                     });
 
-                    fouthCard.setOnClickListener(new View.OnClickListener() {
+                    fourthCard.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            fouthCard.setImageResource(Kards.get(3).getCardImage());
+                            fourthCard.setImageResource(Kards.get(3).getCardImage());
                             card4 = Kards.get(3);
                             card2_face = card4.getFaceValue();
                             card2_suit = card4.getSuit();
@@ -175,7 +175,7 @@ public class CardGrid extends Activity {
                             }else {
                                 count = 1;
                                 cardSelected = 0;
-                                fouthCard = (ImageView)findViewById(R.id.fourthCard);
+                                fourthCard = (ImageView)findViewById(R.id.fourthCard);
                                 Toast.makeText(CardGrid.this, "Wrong Match, Start again", Toast.LENGTH_LONG).show();
                             }
                         }
@@ -192,7 +192,7 @@ public class CardGrid extends Activity {
         firstCard = (ImageView) findViewById(R.id.firstCard);
         secondCard = (ImageView) findViewById(R.id.secondCard);
         thirdCard = (ImageView) findViewById(R.id.thirdCard);
-        fouthCard = (ImageView) findViewById(R.id.fourthCard);
+        fourthCard = (ImageView) findViewById(R.id.fourthCard);
        // points = (ImageView)findViewById(R.id.points);
 
     }// end of initialize function
